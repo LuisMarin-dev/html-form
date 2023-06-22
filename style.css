@@ -10,7 +10,8 @@ body {
 }
 
 form {
-    width: 90%;
-    height: auto;
+    width: 90vw;
+    align-self: center;
     justify-self: center;
+    /* border: solid grey .4px; */
 }
