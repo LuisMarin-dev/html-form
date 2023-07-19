@@ -9,23 +9,78 @@
 </head>
 <body>
     <div class="container-fluid main-div">
-        <form class="border border-secondary-subtle">
-            <div class="row-12 border-bottom">Payment form example</div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      <form class="row g-3 border">
+        <div class="col-12 mt-0 p-2 bg-light border-bottom">
+          <h2>Payment form example</h2>
+        </div>
+        <div class="col-12 mr-auto alert alert-danger" role="alert">
+          <span>Some fields are missing</span>
+        </div>
+        <div class="col-md-5 mr-4">
+          <label for="inputEmail4" class="form-label">Card #</label>
+          <input type="text" class="form-control" id="card_number_input" placeholder="XXXXXXXXXXXXXX">
+        </div>
+        <div class="col-md-3 mr-4">
+          <label for="inputEmail4" class="form-label">CVC #</label>
+          <input type="text" class="form-control" id="cvc_number_input" placeholder="0000">
+        </div>
+        <div class="col-md-4">
+          <label for="inputPassword4" class="form-label">Amount</label>
+          <input type="text" class="form-control" id="amount_input" placeholder="Amount">
+        </div>
+        <div class="col-6">
+          <label for="inputAddress" class="form-label">First name</label>
+          <input type="text" class="form-control" id="fist_name_input">
+        </div>
+        <div class="col-6">
+          <label for="inputAddress2" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="last_name_input">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="city_input">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">State</label>
+          <select id="inputState" class="form-select" placeholder="Pick a state">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Postal Code</label>
+          <input type="text" class="form-control" id="zip_input">
+        </div>
+        <div class="col-12 radios_comment_container">
+            <div class="col-5 radios_div">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="mastercard" id="mastercard_radio" value="mastercard">
+              <label class="form-check-label" for="mastercard_radio">Mastercard</label>
             </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="visa" id="visa_radio" value="visa">
+              <label class="form-check-label" for="inlineRadio2">Visa</label>
             </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="diners_club" id="diners_club_radio" value="diners_club">
+              <label class="form-check-label" for="diners_club_radio">Diners Club</label>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="american_express" id="american_express_radio" value="american_express">
+              <label class="form-check-label" for="american_express_radio">Amex</label>
+            </div>
+          </div>
+          <div class="form-floating col-5">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Comments</label>
+          </div>
+        </div>
+        
+        <div class="col-12 bg-light d-flex justify-content-end">
+          <button type="button" class="mr-2 btn btn-secondary">Cancel</button>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </div>
+      </form>
     </div>
 </body>
 </html>

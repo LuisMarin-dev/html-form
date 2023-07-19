@@ -13,5 +13,20 @@ form {
     width: 90vw;
     align-self: center;
     justify-self: center;
-    /* border: solid grey .4px; */
+}
+
+.radios_comment_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.radios_div{
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    color: rgb(104, 187, 239);
+    background-color: #6C757D;
 }
